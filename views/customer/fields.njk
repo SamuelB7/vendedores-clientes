@@ -1,0 +1,77 @@
+<div class="item">
+            <div>Foto url</div>
+            <div>
+                <input 
+                    type="url"
+                    name ="avatar_url"
+                    placeholder="http://"
+                    value="{{customer.avatar_url}}"
+                >
+            </div>
+        </div>
+        
+        <div class="item">
+            <div>Nome</div>
+            <div>
+                <input 
+                    type="text"
+                    name="name"
+                    placeholder="Nome do cliente"
+                    value="{{customer.name}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>CPF/CNPJ</div>
+            <div>
+                <input 
+                    type="text"
+                    name="cpf"
+                    placeholder="CPF ou CNPJ do cliente"
+                    value="{{customer.cpf}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Email</div>
+            <div>
+                <input 
+                type="text"
+                name="email"
+                placeholder="Email"
+                value="{{customer.email}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Telefone</div>
+            <div>
+                <input 
+                type="text"
+                name="tel"
+                placeholder="Telefone"
+                value="{{customer.tel}}"
+                >
+            </div>
+        </div>
+
+        <div class="item">
+            <div>Vendedor responsável</div>
+                <div>
+                    <select name="salesman">
+                    {% for salesman in salesmanOptions %}
+                    <option value="{{salesman.id}}" {% if member.salesman_id == salesman.id %}selected{%endif%}
+                        >{{salesman.name}}
+                    </option>
+                    {%endfor%}
+
+                </select>
+                </div>
+        </div>
+
+        <button type="submit">Salvar</button>
+        
+        

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body{
+    background: #282a36;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links a:hover::after{
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+
+header {
+    border-bottom: solid 2px white;
+    width: 100%;
+    padding: 32px;
+    text-align: center;
+    box-sizing: border-box;
+    
+}
+
+header a {
+    font-size: larger;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: white;
+    transition: width 200ms ease-in-out ;
+}
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    color: black;
+    margin: 45px auto;
+    
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
+.data {
+    padding: 30px;
+}
+
+.data .item {
+    border-bottom: 1px solid black;
+    padding: 17px 0;
+}
+
+input {
+    width: 100%;
+    outline: none;
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input::placeholder {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+button[type="submit"] {
+    padding: 8px 32px;
+    background-color: #282a36;
+    color: white;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 17px;
+}
+
+a {
+    padding: 8px 32px;
+    background-color: #282a36;
+    color: white;
+    border: 10px;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 17px;
+    align-content: center;
+    text-decoration: none;
+}
+
+a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.table {
+    display: block;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.table .lb {
+    background-color: white;
+    color:  #282a36 ;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.table table {
+    border-spacing: 0;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.table thead tr th {
+    text-align: left;
+    font-size: 20px;
+}
+
+td, th {
+    padding: 16px;
+    border-bottom: 1px solid #d9d9d9;
+    text-align: left;
+    
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.data .b {
+    margin-top: 20px;
+}
+
+.data .pbt {
+    margin-bottom: 10px;
+}
+
+.data .sbt {
+    max-width: 100%; 
+}
+
+
+
+

@@ -1,0 +1,46 @@
+{% extends 'layout.njk'%}
+
+{% block content %}
+
+
+<div class="card">
+    <section class='img' style = "background: url({{ customer.avatar_url }}) no-repeat  center center / cover">
+
+    </section>
+    <section class="data">
+        
+        <h3>Detalhes</h3>
+        <div class="item">
+            <div>Nome</div>
+            <div> {{ customer.name }}</div>
+        </div>
+
+        <div class="item">
+            <div>CPF/CNPJ</div>
+            <div>{{ customer.cpf}}</div>
+        </div>
+
+         <div class="item">
+            <div>Email</div>
+            <div>{{ customer.email }}</div>
+        </div>
+
+        <div class="item">
+            <div>Telefone</div>
+            <div>{{ customer.tel}}</div>
+        </div>
+
+        <div class="item">
+            <div>Vendedor responsável</div>
+            <div>{{customer.salesman_name}}</div>
+        </div>
+        
+        <div class="b">
+            <a class='pbt' href="/customer/{{ customer.id }}/edit" class='button'>Editar</a>
+        </div>
+
+        
+        
+    </section>
+</div>
+{% endblock %}

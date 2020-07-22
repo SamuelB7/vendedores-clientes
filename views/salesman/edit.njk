@@ -1,0 +1,44 @@
+{% extends 'layout.njk'%}
+
+{% block content %}
+
+
+<div class="card">
+    
+    <section
+        class='img' style = "background: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80)  center center / cover">
+    </section>
+
+    <section class="data">
+
+        <form action="/salesman?_method=PUT" method="post">
+        
+            <h3>Editar dados do funcionário</h3>
+
+            {% include 'salesman/fields.njk'%}
+        
+            <input type="hidden" name="id" value={{salesman.id}}>
+
+        </form>
+
+        <form id="form-delete" action="/salesman?_method=DELETE" method="post">
+            <input type="hidden" name="id" value={{salesman.id}}>
+            <button type="submit">Deletar</button>
+        </form>
+
+    </section>
+</div>
+
+<script>
+
+    const formDelete = document.querySelector("#form-delete")
+    formDelete.addEventListener("submit", function(event) {
+        const confirmation = confirm("Deseja Deletar?")
+            if(!confirmation) {
+                event.preventDefault()
+            }
+    })
+
+</script>
+
+{% endblock content %}

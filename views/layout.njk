@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        {% block head %}
+            <title>Empresa</title>
+        {% endblock %}
+
+        <link rel="stylesheet" href="/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <header>
+            <div class="links">
+                <a href="/salesman">Vendedores</a>
+                <a href="/customer">Clientes</a>
+            </div>
+        </header>
+    </body>
+
+    {% block content %}{% endblock %}
+
+</html>
