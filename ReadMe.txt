@@ -1,6 +1,9 @@
 Este projeto é um CRUD simples que eu fiz para aplicar
 os conhecimentos que estou adquirindo sobre desenvolvimento
 web.
+
+Utilizei como base o meu projeto anterior (https://github.com/SamuelB7/meu_primeiro_crud).
+
 É um sistema para cadastrar os vendedores e clientes de uma empresa,
 cada vendedor pode ser responsável por um ou mais clientes.
 Nesse projeto eu utilzei as seguintes tecnologias:
